@@ -1,4 +1,4 @@
-update=Wednesday, August 29, 2018 'PMt' 07:57:21 PM
+update=Wednesday, August 29, 2018 'PMt' 10:53:23 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=feather
 LibName31=lib_microbit_connector
+LibName32=misc_lib

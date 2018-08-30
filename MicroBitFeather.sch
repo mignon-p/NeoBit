@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:feather
 LIBS:lib_microbit_connector
+LIBS:misc_lib
 LIBS:MicroBitFeather-cache
 EELAYER 25 0
 EELAYER END
@@ -483,4 +484,26 @@ Wire Wire Line
 	5850 5000 5850 4900
 Wire Wire Line
 	5850 4900 6200 4900
+$Comp
+L 74AHCT125 U?
+U 1 1 5B8786B5
+P 4700 4750
+F 0 "U?" H 4300 5450 50  0000 C CNN
+F 1 "74AHCT125" H 4950 4050 50  0000 C CNN
+F 2 "" H 4700 4750 60  0000 C CNN
+F 3 "" H 4700 4750 60  0000 C CNN
+	1    4700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Barrel_Jack_MountingPin J?
+U 1 1 5B8786E0
+P 4450 6150
+F 0 "J?" H 4450 6360 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 4500 5900 50  0000 L CNN
+F 2 "" H 4500 6110 50  0001 C CNN
+F 3 "" H 4500 6110 50  0001 C CNN
+	1    4450 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
