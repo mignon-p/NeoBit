@@ -54,14 +54,14 @@ F 1 "microbit_edge_connector" H 7750 5250 50  0000 C CNN
 F 2 "" H 7600 3200 50  0001 C CNN
 F 3 "" H 7600 3200 50  0001 C CNN
 	1    7700 3300
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Feather_Long J?
 U 1 1 5B875D68
 P 2500 2100
-F 0 "J?" H 2700 2350 60  0000 L CNN
-F 1 "Feather_Long" H 2700 2250 60  0000 L CNN
+F 0 "J?" H 2600 2350 60  0000 L CNN
+F 1 "Feather_Long" H 2600 2250 60  0000 L CNN
 F 2 "" H 2500 2100 60  0001 C CNN
 F 3 "" H 2500 2100 60  0001 C CNN
 	1    2500 2100
@@ -70,12 +70,12 @@ $EndComp
 $Comp
 L Feather_Short J?
 U 1 1 5B875D93
-P 3500 2500
-F 0 "J?" H 3700 2750 60  0000 L CNN
-F 1 "Feather_Short" H 3700 2650 60  0000 L CNN
-F 2 "" H 3500 2500 60  0001 C CNN
-F 3 "" H 3500 2500 60  0001 C CNN
-	1    3500 2500
-	1    0    0    -1  
+P 3900 2500
+F 0 "J?" H 4000 2750 60  0000 L CNN
+F 1 "Feather_Short" H 4000 2650 60  0000 L CNN
+F 2 "" H 3900 2500 60  0001 C CNN
+F 3 "" H 3900 2500 60  0001 C CNN
+	1    3900 2500
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
