@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Barrel_Jack_MountingPin
+D DC Barrel Jack with a mounting pin
+K DC power barrel jack connector
+F ~
+$ENDCMP
+#
+#End Doc Library
