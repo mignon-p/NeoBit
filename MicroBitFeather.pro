@@ -1,4 +1,4 @@
-update=Wednesday, August 29, 2018 'PMt' 07:46:42 PM
+update=Wednesday, August 29, 2018 'PMt' 07:57:21 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=feather
+LibName31=lib_microbit_connector
