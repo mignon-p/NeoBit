@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 79)
+    (links 84)
     (no_connects 0)
-    (area 118.034999 83.744999 185.495001 119.455001)
+    (area 118.034999 79.965 186.795 121.968572)
     (thickness 1.6)
     (drawings 12)
     (tracks 279)
     (zones 0)
-    (modules 16)
+    (modules 21)
     (nets 72)
   )
 
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.25)
     (user_trace_width 0.508)
     (user_trace_width 1.016)
     (trace_clearance 0.2)
@@ -60,8 +60,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.524 1.524)
-    (pad_drill 0.762)
+    (pad_size 0.6 0.6)
+    (pad_drill 0.3)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements FFFEF77F)
@@ -243,6 +243,54 @@
     (add_net "Net-(U1-Pad11)")
     (add_net "Net-(U1-Pad6)")
     (add_net "Net-(U1-Pad8)")
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B88D8A9)
+    (at 145.415 104.14)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B88D856)
+    (at 138.43 109.22)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B88D7FD)
+    (at 146.685 108.585)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B88D776)
+    (at 149.86 114.935)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
   )
 
   (module Capacitors_THT:CP_Radial_D10.0mm_P5.00mm (layer F.Cu) (tedit 597BC7C2) (tstamp 5B88B24E)
@@ -1443,6 +1491,18 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B88D75C)
+    (at 152.4 114.935)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
   )
 
   (gr_line (start 176.53 83.82) (end 119.38 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
