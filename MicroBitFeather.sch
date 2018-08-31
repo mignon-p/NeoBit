@@ -606,7 +606,7 @@ Wire Wire Line
 	4300 5300 4200 5300
 Connection ~ 4200 5300
 Text Label 4000 4300 0    50   ~ 0
-P1
+P0
 Wire Wire Line
 	4000 4300 4300 4300
 NoConn ~ 5100 4600

@@ -2,8 +2,8 @@
 
   (general
     (links 79)
-    (no_connects 71)
-    (area 115.424999 71.584999 217.260002 148.48)
+    (no_connects 50)
+    (area 118.034999 83.744999 185.495001 119.455001)
     (thickness 1.6)
     (drawings 12)
     (tracks 122)
@@ -1378,7 +1378,7 @@
     (pad 8 thru_hole oval (at 7.62 15.24) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 69 "Net-(U1-Pad8)"))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
-      (net 8 /P1))
+      (net 7 /P0))
     (pad 9 thru_hole oval (at 7.62 12.7) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 2 GND))
     (pad 3 thru_hole oval (at 0 5.08) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
