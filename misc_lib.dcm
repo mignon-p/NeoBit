@@ -6,4 +6,10 @@ K DC power barrel jack connector
 F ~
 $ENDCMP
 #
+$CMP R_POT_MountingPin
+D Potentiometer with a mounting pin
+K resistor variable
+F ~
+$ENDCMP
+#
 #End Doc Library
