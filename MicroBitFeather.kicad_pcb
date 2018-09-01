@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 87)
+    (links 89)
     (no_connects 0)
     (area 118.034999 79.965 186.795 121.968572)
     (thickness 1.6)
     (drawings 12)
     (tracks 284)
     (zones 0)
-    (modules 24)
+    (modules 26)
     (nets 72)
   )
 
@@ -248,6 +248,30 @@
     (add_net "Net-(U1-Pad11)")
     (add_net "Net-(U1-Pad6)")
     (add_net "Net-(U1-Pad8)")
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B8A38BC)
+    (at 147.32 114.935)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B8A384C)
+    (at 146.685 113.665)
+    (fp_text reference VIA (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.015)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
   )
 
   (module footprints:VIA-0.6mm (layer F.Cu) (tedit 5B88D6E8) (tstamp 5B8985C7)
@@ -2248,6 +2272,13 @@
         (xy 143.925073 103.519972) (xy 143.656203 103.408327) (xy 143.365075 103.408073) (xy 143.09601 103.519248) (xy 142.889972 103.724927)
         (xy 142.875102 103.760739) (xy 142.860752 103.72601) (xy 142.655073 103.519972) (xy 142.386203 103.408327) (xy 142.095075 103.408073)
         (xy 142.093855 103.408577) (xy 143.580295 101.922137)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 148.705146 115.555992) (xy 148.59 115.533088) (xy 148.156709 115.619275) (xy 148.133718 115.596284) (xy 147.953079 115.475585)
+        (xy 147.740001 115.433201) (xy 147.575633 115.433201) (xy 145.079465 112.937033) (xy 145.275521 112.898035) (xy 145.675146 112.631014)
+        (xy 145.717212 112.568058)
       )
     )
     (filled_polygon
