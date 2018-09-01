@@ -38,7 +38,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Neopixel and FeatherWing adapter for Micro:Bit"
-Date "2017-08-30"
+Date "2017-08-31"
 Rev ""
 Comp "Patrick Pelletier"
 Comment1 ""
@@ -444,19 +444,17 @@ Wire Wire Line
 $Comp
 L Conn_01x03 J4
 U 1 1 5B8792D8
-P 6400 4800
-F 0 "J4" H 6400 5000 50  0000 C CNN
-F 1 "NeoPixels" H 6400 4600 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_S3B-PH-K_03x2.00mm_Angled" H 6400 4800 50  0001 C CNN
-F 3 "" H 6400 4800 50  0001 C CNN
-F 4 "S3B-PH-K-S(LF)(SN)" H 6400 4800 60  0001 C CNN "MPN"
-F 5 "CONN HEADER PH SIDE 3POS 2MM" H 6400 4800 60  0001 C CNN "Description"
-F 6 "455-1720-ND" H 6400 4800 60  0001 C CNN "Digi-Key_PN"
-	1    6400 4800
+P 6400 4900
+F 0 "J4" H 6400 5100 50  0000 C CNN
+F 1 "NeoPixels" H 6400 4700 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S3B-PH-K_03x2.00mm_Angled" H 6400 4900 50  0001 C CNN
+F 3 "" H 6400 4900 50  0001 C CNN
+F 4 "S3B-PH-K-S(LF)(SN)" H 6400 4900 60  0001 C CNN "MPN"
+F 5 "CONN HEADER PH SIDE 3POS 2MM" H 6400 4900 60  0001 C CNN "Description"
+F 6 "455-1720-ND" H 6400 4900 60  0001 C CNN "Digi-Key_PN"
+	1    6400 4900
 	1    0    0    -1  
 $EndComp
-Text Notes 6750 5150 2    50   ~ 0
-FIXME: Check pinout!
 $Comp
 L GND #PWR07
 U 1 1 5B87949E
@@ -471,18 +469,14 @@ $EndComp
 $Comp
 L +5V #PWR08
 U 1 1 5B8794C4
-P 5850 4550
-F 0 "#PWR08" H 5850 4400 50  0001 C CNN
-F 1 "+5V" H 5850 4690 50  0000 C CNN
-F 2 "" H 5850 4550 50  0001 C CNN
-F 3 "" H 5850 4550 50  0001 C CNN
-	1    5850 4550
+P 6100 4650
+F 0 "#PWR08" H 6100 4500 50  0001 C CNN
+F 1 "+5V" H 6100 4790 50  0000 C CNN
+F 2 "" H 6100 4650 50  0001 C CNN
+F 3 "" H 6100 4650 50  0001 C CNN
+	1    6100 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 4550 5850 4700
-Wire Wire Line
-	5850 4700 6200 4700
 Wire Wire Line
 	5850 5000 5850 4900
 Wire Wire Line
@@ -866,4 +860,8 @@ F 6 "CF14JT10K0CT-ND" H 5950 2600 60  0001 C CNN "Digi-Key_PN"
 $EndComp
 Text Notes 3800 6350 0    60   ~ 0
 Check\nconnector\ndiameter!
+Wire Wire Line
+	6100 4650 6100 5000
+Wire Wire Line
+	6100 5000 6200 5000
 $EndSCHEMATC
