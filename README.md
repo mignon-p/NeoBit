@@ -1,34 +1,61 @@
-## Pinout
+# neo:bit
 
-This diagram shows how the [pins on the micro:bit][11] map to the
-[pins on the Feather][12].  (Some of the Feather pins don't have
-official names, so I [made up some names][13].)
+The neo:bit is a board which attaches to the [edge connector][11] of
+the [BBC micro:bit][16] and provides:
+
+* Two slide potentiometers, connected to micro:bit pins P1 and P2,
+  which can be read as analog inputs.
+
+* A connector for connecting "NeoPixels" (WS-2812 LEDs), with a level
+  shifter to convert from 3.3V logic to 5V logic.
+
+* A barrel connector for an external 5V power supply, which is
+  mandatory for powering the NeoPixels, and can also optionally
+  backpower the micro:bit safely.
+
+## Usage
+
+To read the slide potentiometers, just configure P1 and P2 as analog
+inputs, and read them.  The idea is that you could use these inputs to
+control your NeoPixel animation, such as the speed, color, or
+brightness.
+
+To connect NeoPixels to the three-pin JST-PH connector, I recommend
+using [SparkFun part number CAB-14165][17], which adapts the JST-PH
+connector to a JST-SM connector.  Beware that this is
+[not a straight-through cable][18]!  The pinout is as follows:
 
 ```
-             µbit  fthr                       fthr  µbit
-                        +-------------------+
-                        | O               O |
-                        |                   |
-10K pullup to 3V3  ~RST | o                 |
-             3V3   3V3  | o                 |
-             NC    AREF | o                 |
-             GND   GND  | o                 |
-             P0    A0   | o               o | VBAT  5V
-             P1    A1   | o               o | EN    10K pullup to 3V3
-             P2    A2   | o               o | VUSB  5V
-   LEDCOL(1) P3    A3   | o               o | F6    P13 (SCLK)
-   LEDCOL(2) P4    A4   | o               o | F5    P9  LEDCOL(7)
-   LEDCOL(3) P10   A5   | o               o | F4    P15 (MOSI)
-      (SCLK) P13   SCK  | o               o | F3    P11 BUTTON(B)
-      (MOSI) P15   MOSI | o               o | F2    P5  BUTTON(A)
-      (MISO) P14   MISO | o               o | F1    P8
-   LEDCOL(9) P6    RX   | o               o | F0    P16
-  LEDCOL(10) P7    TX   | o               o | SCL   P19 (SCL)
-  accessblty P12   FREE | o               o | SDA   P20 (SDA)
-                        |                   |
-                        | O               O |
-                        +-------------------+
+      JST-PH  JST-SM
+Data     1       2
+GND      2       3
++5V      3       1
 ```
+
+The resulting pinout on the JST-SM side should be correct for
+connecting [strings of Alitove 5V lights][19], or my
+[chainable NeoPixel butterflies][20].  However, if you are using
+another NeoPixel product that has a JST-SM connector, double-check the
+pinout to make sure it is correct for the product you are using!  If
+you are using a NeoPixel product which does not have a JST-SM
+connector, you may find a product such as [this one][21] or
+[this one][22] to be helpful, for connecting directly to the JST-PH
+connector on the neo:bit board.
+
+You must have an external 5V power supply (such as [this one][23] or
+[this one][24]) connected to the neo:bit's barrel jack in order to
+power the NeoPixels.  If the 5V power supply is connected, the neo:bit
+will also supply 3.3V back to the micro:bit, so it is not necessary to
+power the micro:bit from another source.  (However, this is done with
+a protection diode, so it is OK to have the micro:bit connected to
+another source at the same time the 5V supply is connected.)  If you
+only want to use the potentiometers and not the NeoPixel output, then
+you do not need to have a 5V supply connected, as long as the
+micro:bit is powered by another source.
+
+Following the [NeoPixel best practices][25], the neo:bit includes a
+470 ohm resistor on the NeoPixel data line, and there is a 1000µF
+capacitor on the +5V power line.
 
 ## License
 
@@ -36,9 +63,9 @@ official names, so I [made up some names][13].)
 
 Some library components are under different licenses:
 
-* [microbit_edge_connector][1] symbol by [anthonykirby][3] and [4UCON_10156_90deg][2] footprint by [SukkoPera][4] ([MIT License][5]).
+* [microbit_edge_connector][1] symbol by [anthonykirby][3] and [4UCON_10156_90deg][2] footprint (which I have substantially modified) by [SukkoPera][4] ([MIT License][5]).
 * 74AHCT125 symbol is a substantially modified version of the symbol from [a library][6] by [propane-and-electrons][7].
-* Barrel_Jack_MountingPin symbol is from [the official KiCad 5 library][8] ([CC-BY-SA 4.0 with exception][9]).
+* Barrel_Jack_MountingPin symbol is from [the official KiCad 5 library][8], and R_POT_Mountingpin symbol is derived from a symbol in the official library ([CC-BY-SA 4.0 with exception][9]).
 
 [1]: https://github.com/anthonykirby/kicad_microbit_connector/blob/master/lib_microbit_connector/lib_microbit_connector.lib
 [2]: https://github.com/SukkoPera/OpenAmiga600RamExpansion/blob/master/OpenAmiga600RamExpansion.pretty/4UCON_10156_90deg.kicad_mod
@@ -51,5 +78,13 @@ Some library components are under different licenses:
 [9]: https://forum.kicad.info/t/kicad-library-licensing/7856
 [10]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 [11]: https://tech.microbit.org/hardware/edgeconnector_ds/
-[12]: https://learn.adafruit.com/adafruit-feather/feather-specification
-[13]: http://funwithsoftware.org/posts/2018-08-31-feather-ascii-art-pinout.html
+[16]: https://microbit.org/
+[17]: https://www.sparkfun.com/products/14165
+[18]: https://cdn.sparkfun.com/datasheets/Prototyping/ACCA-1495.pdf
+[19]: https://smile.amazon.com/gp/product/B01AG923GI/
+[20]: https://github.com/ppelleti/ButterflyChain
+[21]: https://www.adafruit.com/product/3893
+[22]: https://www.adafruit.com/product/3894
+[23]: https://www.adafruit.com/product/1466
+[24]: https://www.adafruit.com/product/658
+[25]: https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices
