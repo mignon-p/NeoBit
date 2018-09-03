@@ -57,6 +57,25 @@ Following the [NeoPixel best practices][25], the neo:bit includes a
 470 ohm resistor on the NeoPixel data line, and there is a 1000µF
 capacitor on the +5V power line.
 
+## Bill of Materials
+
+| Ref      | Description                      | MPN                 | Digi-Key PN                 |
+| -------- | -------------------------------- | ------------------- | --------------------------- |
+| C1       | CAP ALUM 1000UF 20% 10V RADIAL   | 10WXA1000MEFCT810X9 | [1189-3703-1-ND][50]        |
+| C2       | CAP CER 0.1UF 50V X7R RADIAL     | K104K10X7RF5UH5     | [BC2665CT-ND][51]           |
+| C3, C4   | CAP CER 1UF 50V Y5V RADIAL       | K105Z20Y5VF5TH5     | [BC1168CT-ND][52]           |
+| D1       | DIODE SCHOTTKY 40V 2A DO15       | SB240TA             | [1655-1519-1-ND][53]        |
+| J2       | CONN PWR JACK 2X5.5MM SOLDER     | PJ-063AH            | [CP-063AH-ND][54]           |
+| J4       | CONN HEADER PH SIDE 3POS 2MM     | S3B-PH-K-S(LF)(SN)  | [455-1720-ND][55]           |
+| J5       | micro:bit through-hole right-angle edge connector | [3342][56] | (Adafruit)          |
+| R2       | RES 470 OHM 1/4W 5% AXIAL        | CF14JT470R          | [CF14JT470RCT-ND][57]       |
+| RV1, RV2 | SLIDE POT 10K OHM 0.25W TOP 45MM | PTA4553-2015CPB103  | [PTA4553-2015CPB103-ND][58] |
+| U1       | IC BUF NON-INVERT 5.5V 14DIP     | SN74AHCT125N        | [296-4655-5-ND][59]         |
+| U2       | IC REG LINEAR 3.3V 250MA TO92-3  | MCP1702-3302E/TO    | [MCP1702-3302E/TO-ND][60]   |
+
+Plus you'll need a micro:bit, a power supply, some NeoPixels, and the
+CAB-14165 adapter mentioned above.
+
 ## License
 
 [CC-BY-SA 4.0][10].
@@ -88,3 +107,14 @@ Some library components are under different licenses:
 [23]: https://www.adafruit.com/product/1466
 [24]: https://www.adafruit.com/product/658
 [25]: https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices
+[50]: https://www.digikey.com/products/en?keywords=1189-3703-1-ND
+[51]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
+[52]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
+[53]: https://www.digikey.com/products/en?keywords=1655-1519-1-ND
+[54]: https://www.digikey.com/products/en?keywords=CP-063AH-ND
+[55]: https://www.digikey.com/products/en?keywords=455-1720-ND
+[56]: https://www.adafruit.com/product/3342
+[57]: https://www.digikey.com/products/en?keywords=CF14JT470RCT-ND
+[58]: https://www.digikey.com/products/en?keywords=PTA4553-2015CPB103-ND
+[59]: https://www.digikey.com/products/en?keywords=296-4655-5-ND
+[60]: https://www.digikey.com/products/en?keywords=MCP1702-3302E%2FTO-ND
