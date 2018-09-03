@@ -38,8 +38,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Neopixel and potentiometer adapter for Micro:Bit"
-Date "2017-09-01"
-Rev ""
+Date "2017-09-03"
+Rev "1.0"
 Comp "Patrick Pelletier"
 Comment1 ""
 Comment2 ""
@@ -562,8 +562,6 @@ F 6 "BC1168CT-ND" H 6650 6350 60  0001 C CNN "Digi-Key_PN"
 	1    6650 6350
 	1    0    0    -1  
 $EndComp
-Text Notes 3800 6350 0    60   ~ 0
-Check\nconnector\ndiameter!
 Wire Wire Line
 	6100 4650 6100 5000
 Wire Wire Line
