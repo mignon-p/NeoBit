@@ -56,6 +56,10 @@ Following the [NeoPixel best practices][25], the neo:bit includes a
 470 ohm resistor on the NeoPixel data line, and there is a 1000µF
 capacitor on the +5V power line.
 
+Once you have your NeoPixels hooked up, you should be able to access
+them by instantiating a NeoPixel strip on pin P0 in either
+[MakeCode][27] or [Python][28].
+
 ## Bill of Materials
 
 | Ref      | Description                      | MPN                 | Digi-Key PN                 |
@@ -112,6 +116,8 @@ Some library components are under different licenses:
 [24]: https://www.adafruit.com/product/658
 [25]: https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices
 [26]: https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit
+[27]: https://makecode.microbit.org/pkg/microsoft/pxt-neopixel
+[28]: https://microbit-micropython.readthedocs.io/en/latest/neopixel.html
 [50]: https://www.digikey.com/products/en?keywords=1189-3703-1-ND
 [51]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
 [52]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
