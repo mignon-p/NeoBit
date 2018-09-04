@@ -25,12 +25,11 @@ using [SparkFun part number CAB-14165][17], which adapts the JST-PH
 connector to a JST-SM connector.  Beware that this is
 [not a straight-through cable][18]!  The pinout is as follows:
 
-```
-      JST-PH  JST-SM
-Data     1       2
-GND      2       3
-+5V      3       1
-```
+| Name | JST-PH | JST-SM |
+| ---- | ------ | ------ |
+| Data | 1      | 2      |
+| GND  | 2      | 3      |
+| +5V  | 3      | 1      |
 
 The resulting pinout on the JST-SM side should be correct for
 connecting [strings of Alitove 5V lights][19], or my
@@ -72,9 +71,14 @@ capacitor on the +5V power line.
 | RV1, RV2 | SLIDE POT 10K OHM 0.25W TOP 45MM | PTA4553-2015CPB103  | [PTA4553-2015CPB103-ND][58] |
 | U1       | IC BUF NON-INVERT 5.5V 14DIP     | SN74AHCT125N        | [296-4655-5-ND][59]         |
 | U2       | IC REG LINEAR 3.3V 250MA TO92-3  | MCP1702-3302E/TO    | [MCP1702-3302E/TO-ND][60]   |
+| (qty 2)  | KNOB SMOOTH 0.157 X 0.039" NYLON | 1300-E              | [1722-1329-ND][61]          |
 
 Plus you'll need a micro:bit, a power supply, some NeoPixels, and the
 CAB-14165 adapter mentioned above.
+
+The right-angle micro:bit edge connector (J5) is 4UCON 10156, which is
+available from [Adafruit][56] in the US and from [Cool Components][26]
+in the UK.
 
 ## License
 
@@ -107,6 +111,7 @@ Some library components are under different licenses:
 [23]: https://www.adafruit.com/product/1466
 [24]: https://www.adafruit.com/product/658
 [25]: https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices
+[26]: https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit
 [50]: https://www.digikey.com/products/en?keywords=1189-3703-1-ND
 [51]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
 [52]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
@@ -118,3 +123,4 @@ Some library components are under different licenses:
 [58]: https://www.digikey.com/products/en?keywords=PTA4553-2015CPB103-ND
 [59]: https://www.digikey.com/products/en?keywords=296-4655-5-ND
 [60]: https://www.digikey.com/products/en?keywords=MCP1702-3302E%2FTO-ND
+[61]: https://www.digikey.com/product-detail/en/davies-molding-llc/1300-E/1722-1329-ND/7908416
