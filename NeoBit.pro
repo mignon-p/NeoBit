@@ -1,4 +1,4 @@
-update=Wednesday, August 29, 2018 'PMt' 10:53:23 PM
+update=Saturday, September 08, 2018 'PMt' 12:23:53 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,6 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=feather
-LibName31=lib_microbit_connector
-LibName32=misc_lib
+LibName30=lib_microbit_connector
+LibName31=misc_lib
