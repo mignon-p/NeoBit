@@ -1,4 +1,4 @@
-update=Saturday, September 08, 2018 'PMt' 12:23:53 PM
+update=Saturday, September 08, 2018 'PMt' 12:25:36 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=lib_microbit_connector
 LibName31=misc_lib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=doc
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
