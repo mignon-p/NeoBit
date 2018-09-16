@@ -16,6 +16,9 @@ the [BBC micro:bit][16] and provides:
 This repository contains [KiCad][83] and [gerber][84] files for the
 neo:bit board.
 
+* [View schematic](doc/schematic.pdf)
+* [View PCB][30]
+
 ![neo:bit board](doc/neobit-alitove.jpg)
 
 ## Usage
@@ -59,6 +62,18 @@ well as my NeoPixel butterflies, use RGB order instead of the default
 GRB order.
 
 ![example MakeCode program](doc/neopixel-rainbow-pxt.png)
+
+## Ordering the Board
+
+You can order this board [directly from OSH Park][29] without needing
+to upload anything.
+
+Or, if you prefer to go with another fab like [Elecrow][86] or
+[JLCPCB][87], all you need to do is zip up the files in the `gerber`
+directory, and upload that zip file to the fab.
+
+If you want to modify the design, the source is provided in
+[KiCad][83] format.
 
 ## Bill of Materials
 
@@ -118,6 +133,8 @@ Some symbols and footprints in this repo are under different licenses:
 [26]: https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit
 [27]: https://makecode.microbit.org/pkg/microsoft/pxt-neopixel
 [28]: https://microbit-micropython.readthedocs.io/en/latest/neopixel.html
+[29]: https://oshpark.com/shared_projects/wggp8Cjl
+[30]: https://eyrie.io/board/9e1a5f1d622a41188564be353a699805
 [50]: https://www.digikey.com/products/en?keywords=1189-3703-1-ND
 [51]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
 [52]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
@@ -135,3 +152,5 @@ Some symbols and footprints in this repo are under different licenses:
 [82]: https://www.adafruit.com/product/1466
 [83]: http://kicad-pcb.org/
 [84]: https://en.wikipedia.org/wiki/Gerber_format
+[86]: https://www.elecrow.com/pcb-manufacturing.html
+[87]: https://jlcpcb.com/quote
