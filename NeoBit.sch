@@ -178,20 +178,6 @@ Wire Wire Line
 	7000 4850 7150 4850
 Connection ~ 7150 4850
 $Comp
-L Conn_01x03 J4
-U 1 1 5B8792D8
-P 6400 4900
-F 0 "J4" H 6400 5100 50  0000 C CNN
-F 1 "NeoPixels" H 6400 4700 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_S3B-PH-K_03x2.00mm_Angled" H 6400 4900 50  0001 C CNN
-F 3 "" H 6400 4900 50  0001 C CNN
-F 4 "S3B-PH-K-S(LF)(SN)" H 6400 4900 60  0001 C CNN "MPN"
-F 5 "CONN HEADER PH SIDE 3POS 2MM" H 6400 4900 60  0001 C CNN "Description"
-F 6 "455-1720-ND" H 6400 4900 60  0001 C CNN "Digi-Key_PN"
-	1    6400 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR03
 U 1 1 5B87949E
 P 5850 5000
@@ -215,8 +201,6 @@ F 3 "" H 3100 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 5000 5850 4900
-Wire Wire Line
-	5850 4900 6200 4900
 $Comp
 L 74AHCT125 U1
 U 1 1 5B8786B5
@@ -297,8 +281,6 @@ Wire Wire Line
 Connection ~ 4500 6600
 Wire Wire Line
 	5100 4300 5500 4300
-Wire Wire Line
-	5500 4800 6200 4800
 Wire Wire Line
 	4300 4400 4200 4400
 Wire Wire Line
@@ -539,10 +521,6 @@ F 6 "BC1168CT-ND" H 6650 6350 60  0001 C CNN "Digi-Key_PN"
 	1    6650 6350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 4650 6100 5000
-Wire Wire Line
-	6100 5000 6200 5000
 $Comp
 L R_POT_MountingPin RV1
 U 1 1 5B8B1245
@@ -663,12 +641,8 @@ NoConn ~ 7200 2600
 NoConn ~ 7200 2700
 NoConn ~ 7200 2800
 NoConn ~ 7200 2900
-NoConn ~ 7200 3400
 NoConn ~ 7200 3500
-NoConn ~ 7200 3600
 NoConn ~ 7200 3700
-NoConn ~ 7200 4400
-NoConn ~ 7200 4500
 Wire Wire Line
 	7600 6000 7600 6100
 $Comp
@@ -800,4 +774,88 @@ $EndComp
 Wire Wire Line
 	3500 4100 3500 4000
 Connection ~ 3100 4100
+$Comp
+L Screw_Terminal_01x03 J?
+U 1 1 5BA3E89A
+P 6500 4800
+F 0 "J?" H 6500 5000 50  0000 C CNN
+F 1 "NeoPixels" H 6500 4600 50  0000 C CNN
+F 2 "" H 6500 4800 50  0001 C CNN
+F 3 "" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4650 6100 4700
+Wire Wire Line
+	6100 4700 6300 4700
+Wire Wire Line
+	5500 4800 6300 4800
+Wire Wire Line
+	5850 4900 6300 4900
+Text Label 7000 3400 0    50   ~ 0
+SCK
+Text Label 7000 3600 0    50   ~ 0
+MOSI
+Wire Wire Line
+	7000 3400 7200 3400
+Wire Wire Line
+	7000 3600 7200 3600
+Text Label 7000 4400 0    50   ~ 0
+SCL
+Text Label 7000 4500 0    50   ~ 0
+SDA
+Wire Wire Line
+	7000 4400 7200 4400
+Wire Wire Line
+	7000 4500 7200 4500
+$Comp
+L Screw_Terminal_01x04 J?
+U 1 1 5BA3F768
+P 5600 1600
+F 0 "J?" H 5600 1800 50  0000 C CNN
+F 1 "DotStars" H 5600 1300 50  0000 C CNN
+F 2 "" H 5600 1600 50  0001 C CNN
+F 3 "" H 5600 1600 50  0001 C CNN
+	1    5600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +VDC #PWR?
+U 1 1 5BA4005E
+P 5200 1400
+F 0 "#PWR?" H 5200 1300 50  0001 C CNN
+F 1 "+VDC" H 5200 1650 50  0000 C CNN
+F 2 "" H 5200 1400 50  0001 C CNN
+F 3 "" H 5200 1400 50  0001 C CNN
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BA4009C
+P 5200 1900
+F 0 "#PWR?" H 5200 1650 50  0001 C CNN
+F 1 "GND" H 5200 1750 50  0000 C CNN
+F 2 "" H 5200 1900 50  0001 C CNN
+F 3 "" H 5200 1900 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+Text Label 5200 1600 0    50   ~ 0
+SCK
+Text Label 5200 1700 0    50   ~ 0
+MOSI
+Wire Wire Line
+	5200 1400 5200 1500
+Wire Wire Line
+	5200 1500 5400 1500
+Wire Wire Line
+	5200 1900 5200 1800
+Wire Wire Line
+	5200 1800 5400 1800
+Wire Wire Line
+	5200 1600 5400 1600
+Wire Wire Line
+	5200 1700 5400 1700
 $EndSCHEMATC
