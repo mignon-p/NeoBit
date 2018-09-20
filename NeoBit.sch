@@ -307,7 +307,7 @@ Wire Wire Line
 	4300 5300 4200 5300
 Connection ~ 4200 5300
 Text Label 4000 4300 0    50   ~ 0
-P0
+P16
 Wire Wire Line
 	4000 4300 4300 4300
 NoConn ~ 5100 4600
@@ -642,7 +642,6 @@ NoConn ~ 7200 2700
 NoConn ~ 7200 2800
 NoConn ~ 7200 2900
 NoConn ~ 7200 3500
-NoConn ~ 7200 3700
 Wire Wire Line
 	7600 6000 7600 6100
 $Comp
@@ -907,4 +906,43 @@ Wire Wire Line
 	3500 1700 3700 1700
 Wire Wire Line
 	3500 1800 3700 1800
+$Comp
+L AudioJack3_Ground J?
+U 1 1 5BA405B2
+P 2800 2700
+F 0 "J?" H 2800 3050 50  0000 C CNN
+F 1 "AudioJack3_Ground" H 2800 2950 50  0000 C CNN
+F 2 "" H 2800 2700 50  0001 C CNN
+F 3 "" H 2800 2700 50  0001 C CNN
+	1    2800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BA40629
+P 3600 2700
+F 0 "#PWR?" H 3600 2450 50  0001 C CNN
+F 1 "GND" H 3600 2550 50  0000 C CNN
+F 2 "" H 3600 2700 50  0001 C CNN
+F 3 "" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2700
+Text Label 3300 2800 2    50   ~ 0
+P0
+Wire Wire Line
+	3000 2800 3300 2800
+Wire Wire Line
+	3000 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2800
+Connection ~ 3100 2800
+Text Label 7000 3700 0    50   ~ 0
+P16
+Wire Wire Line
+	7000 3700 7200 3700
 $EndSCHEMATC
