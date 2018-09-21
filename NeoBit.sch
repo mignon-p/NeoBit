@@ -763,7 +763,7 @@ U 1 1 5BA3E89A
 P 6500 4800
 F 0 "J6" H 6500 5000 50  0000 C CNN
 F 1 "NeoPixels" H 6500 4600 50  0000 C CNN
-F 2 "" H 6500 4800 50  0001 C CNN
+F 2 "footprints:TerminalBlock_4Ucon_1x03_P3.50mm_Vertical" H 6500 4800 50  0001 C CNN
 F 3 "" H 6500 4800 50  0001 C CNN
 	1    6500 4800
 	1    0    0    -1  
@@ -798,7 +798,7 @@ U 1 1 5BA3F768
 P 5600 1600
 F 0 "J4" H 5600 1800 50  0000 C CNN
 F 1 "DotStars" H 5600 1300 50  0000 C CNN
-F 2 "" H 5600 1600 50  0001 C CNN
+F 2 "footprints:TerminalBlock_4Ucon_1x04_P3.50mm_Vertical" H 5600 1600 50  0001 C CNN
 F 3 "" H 5600 1600 50  0001 C CNN
 	1    5600 1600
 	1    0    0    -1  
