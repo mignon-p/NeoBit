@@ -37,8 +37,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Neopixel and potentiometer adapter for Micro:Bit"
-Date "2017-09-03"
-Rev "1.0"
+Date "2017-09-21"
+Rev "1.1"
 Comp "Patrick Pelletier"
 Comment1 ""
 Comment2 ""
@@ -390,11 +390,11 @@ U 1 1 5B87C03F
 P 7200 6100
 F 0 "D1" H 7200 6200 50  0000 C CNN
 F 1 "D_Schottky" H 7200 6000 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-15_P10.16mm_Horizontal" H 7200 6100 50  0001 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7200 6100 50  0001 C CNN
 F 3 "" H 7200 6100 50  0001 C CNN
-F 4 "SB240TA" H 7200 6100 60  0001 C CNN "MPN"
-F 5 "DIODE SCHOTTKY 40V 2A DO15" H 7200 6100 60  0001 C CNN "Description"
-F 6 "1655-1519-1-ND" H 7200 6100 60  0001 C CNN "Digi-Key_PN"
+F 4 "1N5817" H 7200 6100 60  0001 C CNN "MPN"
+F 5 "DIODE SCHOTTKY 20V 1A DO41" H 7200 6100 60  0001 C CNN "Description"
+F 6 "1N5817FSCT-ND" H 7200 6100 60  0001 C CNN "Digi-Key_PN"
 	1    7200 6100
 	-1   0    0    -1  
 $EndComp
@@ -898,9 +898,9 @@ F 0 "J1" H 2800 3050 50  0000 C CNN
 F 1 "AudioJack3_Ground" H 2800 2950 50  0000 C CNN
 F 2 "footprints:SJ1-3533NG" H 2800 2700 50  0001 C CNN
 F 3 "" H 2800 2700 50  0001 C CNN
-F 4 "SJ1-3523N" H 2800 2700 60  0001 C CNN "MPN"
+F 4 "SJ1-3533NG" H 2800 2700 60  0001 C CNN "MPN"
 F 5 "CONN JACK STEREO 3.5MM R/A" H 2800 2700 60  0001 C CNN "Description"
-F 6 "CP1-3523N-ND" H 2800 2700 60  0001 C CNN "Digi-Key_PN"
+F 6 "CP1-3533NG-ND" H 2800 2700 60  0001 C CNN "Digi-Key_PN"
 	1    2800 2700
 	1    0    0    -1  
 $EndComp
@@ -934,4 +934,6 @@ Wire Wire Line
 	7000 3700 7200 3700
 Wire Wire Line
 	2400 4100 3100 4100
+Text Notes 2850 1050 0    60   ~ 0
+TODO: run through level shifter
 $EndSCHEMATC
