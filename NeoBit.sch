@@ -744,8 +744,6 @@ Wire Wire Line
 	1800 4100 1600 4100
 Connection ~ 1600 4100
 Wire Wire Line
-	2400 4100 3500 4100
-Wire Wire Line
 	3100 4100 3100 4000
 Wire Wire Line
 	2600 4200 2600 4100
@@ -759,20 +757,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 4400 2100 4700
 Connection ~ 2100 4600
-$Comp
-L PWR_FLAG #FLG023
-U 1 1 5BA33AB3
-P 3500 4000
-F 0 "#FLG023" H 3500 4075 50  0001 C CNN
-F 1 "PWR_FLAG" H 3500 4150 50  0000 C CNN
-F 2 "" H 3500 4000 50  0001 C CNN
-F 3 "" H 3500 4000 50  0001 C CNN
-	1    3500 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 4100 3500 4000
-Connection ~ 3100 4100
 $Comp
 L Screw_Terminal_01x03 J6
 U 1 1 5BA3E89A
@@ -948,4 +932,6 @@ Text Label 7000 3700 0    50   ~ 0
 P16
 Wire Wire Line
 	7000 3700 7200 3700
+Wire Wire Line
+	2400 4100 3100 4100
 $EndSCHEMATC
