@@ -289,14 +289,8 @@ Wire Wire Line
 	4200 5550 4700 5550
 Connection ~ 4700 5550
 Wire Wire Line
-	4300 4600 4200 4600
-Connection ~ 4200 4600
-Wire Wire Line
 	4300 4700 4200 4700
 Connection ~ 4200 4700
-Wire Wire Line
-	4300 4900 4200 4900
-Connection ~ 4200 4900
 Wire Wire Line
 	4300 5000 4200 5000
 Connection ~ 4200 5000
@@ -310,8 +304,6 @@ Text Label 4000 4300 0    50   ~ 0
 P16
 Wire Wire Line
 	4000 4300 4300 4300
-NoConn ~ 5100 4600
-NoConn ~ 5100 4900
 NoConn ~ 5100 5200
 $Comp
 L R R2
@@ -826,9 +818,9 @@ F 3 "" H 5200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5200 1600 0    50   ~ 0
-SCK
+SCK5
 Text Label 5200 1700 0    50   ~ 0
-MOSI
+MOSI5
 Wire Wire Line
 	5200 1400 5200 1500
 Wire Wire Line
@@ -934,6 +926,20 @@ Wire Wire Line
 	7000 3700 7200 3700
 Wire Wire Line
 	2400 4100 3100 4100
-Text Notes 2850 1050 0    60   ~ 0
-TODO: run through level shifter
+Text Label 4000 4600 0    50   ~ 0
+SCK
+Text Label 4000 4900 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4000 4600 4300 4600
+Wire Wire Line
+	4000 4900 4300 4900
+Text Label 5350 4600 2    50   ~ 0
+SCK5
+Text Label 5350 4900 2    50   ~ 0
+MOSI5
+Wire Wire Line
+	5100 4600 5350 4600
+Wire Wire Line
+	5100 4900 5350 4900
 $EndSCHEMATC
