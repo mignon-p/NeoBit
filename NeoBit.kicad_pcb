@@ -2,7 +2,7 @@
 
   (general
     (links 81)
-    (no_connects 59)
+    (no_connects 57)
     (area 118.669999 83.744999 186.130001 129.615001)
     (thickness 1.6)
     (drawings 14)
@@ -27,7 +27,7 @@
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -1288,12 +1288,12 @@
     (pad "" smd rect (at 2.8 1.9375 270) (size 1.2 1.8) (layers F.Cu F.Paste F.Mask))
   )
 
-  (module footprints:TerminalBlock_4Ucon_1x04_P3.50mm_Vertical (layer F.Cu) (tedit 5A080A00) (tstamp 5BA47DEF)
-    (at 190.5 88.9 180)
+  (module footprints:TerminalBlock_4Ucon_1x04_P3.50mm_Vertical (layer F.Cu) (tedit 5BA6657C) (tstamp 5BA47DEF)
+    (at 191.77 88.9 180)
     (descr "Terminal Block 4Ucon ItemNo. 10695, vertical (cable from top), 4 pins, pitch 3.5mm, size 15.0x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10695.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon")
     (tags "THT Terminal Block 4Ucon ItemNo. 10695 vertical pitch 3.5mm size 15.0x8.3mm^2 drill 1.3mm pad 2.6mm")
     (path /5BA3F768)
-    (fp_text reference J4 (at 5.25 -4.76 180) (layer F.SilkS)
+    (fp_text reference J4 (at 10.795 -5.08 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value DotStars (at 5.25 5.66 180) (layer F.Fab)
@@ -1762,6 +1762,8 @@
     )
   )
 
+  (gr_line (start 121.285 129.54) (end 193.675 129.54) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 121.285 83.82) (end 193.675 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_text NeoPixels (at 185 89.5 90) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
   )
@@ -1780,12 +1782,10 @@
   (gr_text "2018-09-03\nhttps://github.com/ppelleti/NeoBit\ndesigned by Patrick Pelletier" (at 154.94 99.06) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_line (start 183.515 83.82) (end 121.285 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 186.055 127) (end 186.055 86.36) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 121.285 129.54) (end 183.515 129.54) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 196.215 127) (end 196.215 86.36) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 118.745 86.36) (end 118.745 127) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 183.515 127) (end 186.055 127) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 183.515 86.36) (end 183.515 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 193.675 127) (end 196.215 127) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 193.675 86.36) (end 193.675 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 121.285 127) (end 121.285 129.54) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 121.285 86.36) (end 118.745 86.36) (angle 90) (layer Edge.Cuts) (width 0.15))
 
@@ -1796,7 +1796,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 181.61 85.725) (xy 181.61 115.57) (xy 163.83 115.57) (xy 163.83 95.25) (xy 173.99 85.725)
+        (xy 194.31 85.725) (xy 194.31 123.825) (xy 171.45 123.825) (xy 171.45 106.68) (xy 190.5 85.725)
       )
     )
     (filled_polygon
@@ -1871,7 +1871,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 186.055 129.54) (xy 118.745 129.54) (xy 118.745 83.82) (xy 186.055 83.82)
+        (xy 196.215 129.54) (xy 118.745 129.54) (xy 118.745 83.82) (xy 196.215 83.82)
       )
     )
     (filled_polygon
@@ -2243,7 +2243,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 186.055 129.54) (xy 118.745 129.54) (xy 118.745 83.82) (xy 186.055 83.82)
+        (xy 196.215 129.54) (xy 118.745 129.54) (xy 118.745 83.82) (xy 196.215 83.82)
       )
     )
     (filled_polygon
