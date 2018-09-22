@@ -3,7 +3,7 @@
   (general
     (links 81)
     (no_connects 0)
-    (area 118.669999 83.744999 186.130001 129.615001)
+    (area 117.08 69.015 197.59 131.993096)
     (thickness 1.6)
     (drawings 21)
     (tracks 194)
@@ -15,8 +15,8 @@
   (page USLetter)
   (title_block
     (title "NeoPixel and potentiometer adapter for micro:bit")
-    (date 2018-09-03)
-    (rev 1.0)
+    (date 2018-09-22)
+    (rev 1.1)
     (company "Patrick Pelletier")
   )
 
@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.25)
     (user_trace_width 0.508)
     (user_trace_width 1.016)
     (trace_clearance 0.2)
