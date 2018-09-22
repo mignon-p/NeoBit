@@ -1789,7 +1789,7 @@
   (gr_arc (start 121.285 127) (end 121.285 129.54) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 121.285 86.36) (end 118.745 86.36) (angle 90) (layer Edge.Cuts) (width 0.15))
 
-  (zone (net 1) (net_name +5V) (layer F.Cu) (tstamp 5B8B1DE1) (hatch edge 0.508)
+  (zone (net 9) (net_name +VDC) (layer F.Cu) (tstamp 5B8B1DE1) (hatch edge 0.508)
     (priority 1)
     (connect_pads (clearance 0.3048))
     (min_thickness 0.254)
