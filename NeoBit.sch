@@ -51,7 +51,7 @@ U 1 1 5B875D43
 P 7700 3300
 F 0 "J5" H 7750 5350 50  0000 C CNN
 F 1 "microbit_edge_connector" H 7750 5250 50  0000 C CNN
-F 2 "footprints:4UCON_10156_90deg" H 7600 3200 50  0001 C CNN
+F 2 "footprints:4UCON_10156_2x40_P1.27mm_Socket_Horizontal" H 7600 3200 50  0001 C CNN
 F 3 "" H 7600 3200 50  0001 C CNN
 F 4 "3342" H 7700 3300 60  0001 C CNN "MPN"
 F 5 "micro:bit through-hole right-angle edge connector" H 7700 3300 60  0001 C CNN "Description"

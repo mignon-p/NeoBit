@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/ppelleti/cad/NeoBit/NeoBit.sch)
-    (date "Saturday, September 22, 2018 'AMt' 08:42:50 AM")
+    (date "Saturday, September 22, 2018 'PMt' 05:42:53 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref J5)
       (value microbit_edge_connector)
-      (footprint footprints:4UCON_10156_90deg)
+      (footprint footprints:4UCON_10156_2x40_P1.27mm_Socket_Horizontal)
       (fields
         (field (name MPN) 3342)
         (field (name Description) "micro:bit through-hole right-angle edge connector"))
@@ -183,6 +183,9 @@
     (comp (ref J3)
       (value Qwiic)
       (footprint Connectors_JST:JST_SH_SM04B-SRSS-TB_04x1.00mm_Angled)
+      (fields
+        (field (name MPN) PRT-14417)
+        (field (name Description) "Qwiic JST Connector - SMD 4-pin"))
       (libsource (lib conn) (part Conn_01x04))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BA3FCC1))
