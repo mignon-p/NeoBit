@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Neopixel and potentiometer adapter for Micro:Bit"
-Date "2017-09-21"
+Date "2017-09-23"
 Rev "1.1"
 Comp "Patrick Pelletier"
 Comment1 ""
@@ -972,7 +972,7 @@ F 4 "UVK1A221MDD1TD" H 2850 2850 60  0001 C CNN "MPN"
 F 5 "CAP ALUM 220UF 20% 10V RADIAL" H 2850 2850 60  0001 C CNN "Description"
 F 6 "493-7455-1-ND" H 2850 2850 60  0001 C CNN "Digi-Key_PN"
 	1    2850 2850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L CP1 C9
@@ -986,7 +986,7 @@ F 4 "UVK1A221MDD1TD" H 3150 2850 60  0001 C CNN "MPN"
 F 5 "CAP ALUM 220UF 20% 10V RADIAL" H 3150 2850 60  0001 C CNN "Description"
 F 6 "493-7455-1-ND" H 3150 2850 60  0001 C CNN "Digi-Key_PN"
 	1    3150 2850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2750 2650 2850 2650
