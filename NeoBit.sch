@@ -38,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "Neopixel and potentiometer adapter for Micro:Bit"
 Date "2017-09-23"
-Rev "1.1"
+Rev "2.0"
 Comp "Patrick Pelletier"
 Comment1 ""
 Comment2 ""
