@@ -6,10 +6,16 @@ the [BBC micro:bit][16] and provides:
 * Two slide potentiometers, connected to micro:bit pins P1 and P2,
   which can be read as analog inputs.
 
-* A connector for connecting "NeoPixels" (WS-2812 LEDs), with a level
-  shifter to convert from 3.3V logic (on pin P0) to 5V logic.
+* A terminal block for connecting "NeoPixels" (WS-2812 LEDs), with a
+  level shifter to convert from 3.3V logic (on pin P0) to 5V logic.
 
-* A barrel connector for an external 5V power supply, which is
+* A terminal block for connecting "DotStars" (APA-102 LEDs), with a
+  level shifter to convert from 3.3V logic (on pins P13 and P15) to 5V
+  logic.
+
+* A [Qwiic][89] connector for attaching I2C peripherals.
+
+* A barrel connector for an external 5-12V power supply, which is
   mandatory for powering the NeoPixels, and can also optionally
   backpower the micro:bit safely.
 
@@ -23,33 +29,51 @@ neo:bit board.
 
 ## Usage
 
+### Power
+
+Note that the voltage which comes in on the barrel jack is used
+directly to power the NeoPixels and DotStars, so you need to choose a
+voltage which is appropriate for the NeoPixels and/or DotStars you are
+using.  Most NeoPixels are 5V, although there are a few
+[12V ones][90].  I don't know of any DotStars which are not 5V.  You
+can't have a different voltage for the NeoPixels and the DotStars.
+
+The neo:bit contains a low-dropout 3.3V voltage regulator, which is
+used for back-powering the micro:bit, and for supplying the 3.3V power
+on the Qwiic connector.  You probably shouldn't draw more than 90 mA
+on the Qwiic connector's power pin.
+
+The neo:bit also contains a low-dropout 5V voltage regulator, but that
+is just to supply the 5V signal on the NeoPixel and DotStar data
+lines.
+
+### Potentiometers
+
 To read the slide potentiometers, just configure P1 and P2 as analog
 inputs, and read them.  The idea is that you could use these inputs to
 control your NeoPixel animation, such as the speed, color, or
 brightness.
 
-J4 has the NeoPixel output, along with 5V and GND.  I recommend
-soldering a [JST-SM pigtail][80] to J4.  This will let you connect
-strings of 5V NeoPixels, such as ones from [Alitove][19] or
-[Wesiri][81], or my [chainable NeoPixel butterflies][20].  (The Wesiri
-lights come with the necessary pigtail, so you don't need to buy one
-separately.)
+### NeoPixels
 
-I had originally intended to put a [JST-PH][55] connector on J4, and
-then use [SparkFun part number CAB-14165][17] to adapt to a JST-SM
-connector.  Unfortunately, CAB-14165 has the wrong gender for
-connecting to the Alitove or Wesiri strings.
+J4 has the NeoPixel output, along with +V and GND.  You may want to
+connect a [JST-SM pigtail][80] to the J4 screw terminals.  This will
+let you connect strings of 5V NeoPixels, such as ones from
+[Alitove][19] or [Wesiri][81], or my
+[chainable NeoPixel butterflies][20].  (The Wesiri lights come with
+the necessary pigtail, so you don't need to buy one separately.)
 
-You must have an external 5V power supply (such as [this one][23] or
-[this one][24]) connected to the neo:bit's barrel jack in order to
-power the NeoPixels.  If the 5V power supply is connected, the neo:bit
-will also supply 3.3V back to the micro:bit, so it is not necessary to
-power the micro:bit from another source.  (However, this is done with
-a protection diode, so it is OK to have the micro:bit connected to
-another source at the same time the 5V supply is connected.)  If you
-only want to use the potentiometers and not the NeoPixel output, then
-you do not need to have a 5V supply connected, as long as the
-micro:bit is powered by another source.
+You must have an external power supply (such as [this one][23] or
+[this one][24] for 5V, or [this one][91] for 12V) connected to the
+neo:bit's barrel jack in order to power the NeoPixels.  If the
+external power supply is connected, the neo:bit will also supply 3.3V
+back to the micro:bit, so it is not necessary to power the micro:bit
+from another source.  (However, this is done with a protection diode,
+so it is OK to have the micro:bit connected to another source at the
+same time the external supply is connected.)  If you only want to use
+the potentiometers and/or Qwiic but not the NeoPixel output or DotStar
+output, then you do not need to have an external supply connected, as
+long as the micro:bit is powered by another source.
 
 Following the [NeoPixel best practices][25], the neo:bit includes a
 470 ohm resistor on the NeoPixel data line, and there is a 1000µF
@@ -154,3 +178,6 @@ Some symbols and footprints in this repo are under different licenses:
 [84]: https://en.wikipedia.org/wiki/Gerber_format
 [86]: https://www.elecrow.com/pcb-manufacturing.html
 [87]: https://jlcpcb.com/quote
+[89]: https://www.sparkfun.com/qwiic
+[90]: https://www.adafruit.com/product/3869
+[91]: https://www.adafruit.com/product/352
