@@ -101,26 +101,35 @@ If you want to modify the design, the source is provided in
 
 ## Bill of Materials
 
-| Ref      | Description                      | MPN                 | Digi-Key PN                 |
-| -------- | -------------------------------- | ------------------- | --------------------------- |
-| C1       | CAP ALUM 1000UF 20% 10V RADIAL   | 10WXA1000MEFCT810X9 | [1189-3703-1-ND][50]        |
-| C2       | CAP CER 0.1UF 50V X7R RADIAL     | K104K10X7RF5UH5     | [BC2665CT-ND][51]           |
-| C3, C4   | CAP CER 1UF 50V Y5V RADIAL       | K105Z20Y5VF5TH5     | [BC1168CT-ND][52]           |
-| D1       | DIODE SCHOTTKY 40V 2A DO15       | SB240TA             | [1655-1519-1-ND][53]        |
-| J2       | CONN PWR JACK 2X5.5MM SOLDER     | PJ-063AH            | [CP-063AH-ND][54]           |
-| J4       | 3-pin JST SM Plug + Receptacle Cable Set | [1663][80]  | (Adafruit)                  |
-| J5       | micro:bit through-hole right-angle edge connector | [3342][56] | (Adafruit)          |
-| R2       | RES 470 OHM 1/4W 5% AXIAL        | CF14JT470R          | [CF14JT470RCT-ND][57]       |
-| RV1, RV2 | SLIDE POT 10K OHM 0.25W TOP 45MM | PTA4553-2015CPB103  | [PTA4553-2015CPB103-ND][58] |
-| U1       | IC BUF NON-INVERT 5.5V 14DIP     | SN74AHCT125N        | [296-4655-5-ND][59]         |
-| U2       | IC REG LINEAR 3.3V 250MA TO92-3  | MCP1702-3302E/TO    | [MCP1702-3302E/TO-ND][60]   |
-| (qty 2)  | KNOB SMOOTH 0.157 X 0.039" NYLON | 1300-E              | [1722-1329-ND][61]          |
+| Ref      | Description                      | MPN                 | Digi-Key PN                  |
+| -------- | -------------------------------- | ------------------- | ---------------------------- |
+| C1       | CAP ALUM 1000UF 20% 25V RADIAL   | 25PX1000MEFCT810X16 | [1189-1583-1-ND][C1]         |
+| C2       | CAP CER 0.1UF 50V X7R RADIAL     | K104K10X7RF5UH5     | [BC2665CT-ND][C2]            |
+| C3-C6    | CAP CER 1UF 50V Y5V RADIAL       | K105Z20Y5VF5TH5     | [BC1168CT-ND][C3]            |
+| C7       | CAP ALUM 47UF 20% 16V RADIAL     | ECE-A1CKS470        | [P969-ND][C7]                |
+| C8, C9   | CAP ALUM 220UF 20% 10V RADIAL    | UVK1A221MDD1TD      | [493-7455-1-ND][C8]          |
+| C10      | CAP CER 10000PF 50V X7R RADIAL   | K103K15X7RF5TL2     | [BC1078CT-ND][C10]           |
+| D1       | DIODE SCHOTTKY 20V 1A DO41       | 1N5817              | [1N5817FSCT-ND][D1]          |
+| J1       | CONN JACK STEREO 3.5MM R/A       | SJ1-3533NG          | [CP1-3533NG-ND][J1]          |
+| J2       | CONN PWR JACK 2X5.5MM SOLDER     | PJ-063AH            | [CP-063AH-ND][J2]            |
+| J3       | Qwiic JST Connector - SMD 4-pin  | [PRT-14417][J3]     | (SparkFun)                   |
+| J4       | TERM BLOCK 4POS SIDE ENT 3.5MM   | 1776275-4           | [A98038-ND][J4]              |
+| J5       | micro:bit through-hole right-angle edge connector | [3342][J5] | (Adafruit)           |
+| J6       | TERM BLOCK 3POS SIDE ENT 3.5MM   | 1776275-3           | [A98037-ND][J6]              |
+| R1       | RES 100 OHM 1/4W 5% AXIAL        | CF14JT100R          | [CF14JT100RCT-ND][R1]        |
+| R2       | RES 470 OHM 1/4W 5% AXIAL        | CF14JT470R          | [CF14JT470RCT-ND][R2]        |
+| R3       | RES 22 OHM 1/4W 5% AXIAL         | CF14JT22R0          | [CF14JT22R0CT-ND][R3]        |
+| RV1, RV2 | SLIDE POT 10K OHM 0.25W TOP 45MM | PTA4553-2015CPB103  | [PTA4553-2015CPB103-ND][RV1] |
+| U1       | IC BUF NON-INVERT 5.5V 14DIP     | SN74AHCT125N        | [296-4655-5-ND][U1]          |
+| U2       | IC REG LINEAR 3.3V 250MA TO92-3  | MCP1702-3302E/TO    | [MCP1702-3302E/TO-ND][U2]    |
+| U3       | IC REG LINEAR 5V 250MA TO92-3    | MCP1702-5002E/TO    | [MCP1702-5002E/TO-ND][U3]    |
+| (qty 2)  | KNOB SMOOTH 0.157 X 0.039" NYLON | 1300-E              | [1722-1329-ND][61]           |
 
 Plus you'll need a micro:bit, a power supply (such as [this one][82]),
 and some NeoPixels.
 
 The right-angle micro:bit edge connector (J5) is 4UCON 10156, which is
-available from [Adafruit][56] in the US and from [Cool Components][26]
+available from [Adafruit][J5] in the US and from [Cool Components][26]
 in the UK.
 
 ## License
@@ -159,18 +168,6 @@ Some symbols and footprints in this repo are under different licenses:
 [28]: https://microbit-micropython.readthedocs.io/en/latest/neopixel.html
 [29]: https://oshpark.com/shared_projects/wggp8Cjl
 [30]: https://eyrie.io/board/9e1a5f1d622a41188564be353a699805
-[50]: https://www.digikey.com/products/en?keywords=1189-3703-1-ND
-[51]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
-[52]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
-[53]: https://www.digikey.com/products/en?keywords=1655-1519-1-ND
-[54]: https://www.digikey.com/products/en?keywords=CP-063AH-ND
-[55]: https://www.digikey.com/products/en?keywords=455-1720-ND
-[56]: https://www.adafruit.com/product/3342
-[57]: https://www.digikey.com/products/en?keywords=CF14JT470RCT-ND
-[58]: https://www.digikey.com/products/en?keywords=PTA4553-2015CPB103-ND
-[59]: https://www.digikey.com/products/en?keywords=296-4655-5-ND
-[60]: https://www.digikey.com/products/en?keywords=MCP1702-3302E%2FTO-ND
-[61]: https://www.digikey.com/product-detail/en/davies-molding-llc/1300-E/1722-1329-ND/7908416
 [80]: https://www.adafruit.com/product/1663
 [81]: https://smile.amazon.com/gp/product/B075T84ZR3/
 [82]: https://www.adafruit.com/product/1466
@@ -181,3 +178,24 @@ Some symbols and footprints in this repo are under different licenses:
 [89]: https://www.sparkfun.com/qwiic
 [90]: https://www.adafruit.com/product/3869
 [91]: https://www.adafruit.com/product/352
+
+[C1]: https://www.digikey.com/products/en?keywords=1189-1583-1-ND
+[C2]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
+[C3]: https://www.digikey.com/products/en?keywords=BC1168CT-ND
+[C7]: https://www.digikey.com/products/en?keywords=P969-ND
+[C8]: https://www.digikey.com/products/en?keywords=493-7455-1-ND
+[C10]: https://www.digikey.com/products/en?keywords=BC1078CT-ND
+[D1]: https://www.digikey.com/products/en?keywords=1N5817FSCT-ND
+[J1]: https://www.digikey.com/products/en?keywords=CP1-3533NG-ND
+[J2]: https://www.digikey.com/products/en?keywords=CP-063AH-ND
+[J3]: https://www.sparkfun.com/products/14417
+[J4]: https://www.digikey.com/products/en?keywords=A98038-ND
+[J5]: https://www.adafruit.com/product/3342
+[J6]: https://www.digikey.com/products/en?keywords=A98037-ND
+[R1]: https://www.digikey.com/products/en?keywords=CF14JT100RCT-ND
+[R2]: https://www.digikey.com/products/en?keywords=CF14JT470RCT-ND
+[R3]: https://www.digikey.com/products/en?keywords=CF14JT22R0CT-ND
+[RV1]: https://www.digikey.com/products/en?keywords=PTA4553-2015CPB103-ND
+[U1]: https://www.digikey.com/products/en?keywords=296-4655-5-ND
+[U2]: https://www.digikey.com/products/en?keywords=MCP1702-3302E%2FTO-ND
+[U3]: https://www.digikey.com/products/en?keywords=MCP1702-5002E%2FTO-ND
