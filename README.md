@@ -7,13 +7,15 @@ the [BBC micro:bit][16] and provides:
   which can be read as analog inputs.
 
 * A terminal block for connecting "NeoPixels" (WS-2812 LEDs), with a
-  level shifter to convert from 3.3V logic (on pin P0) to 5V logic.
+  level shifter to convert from 3.3V logic (on pin P16) to 5V logic.
 
 * A terminal block for connecting "DotStars" (APA-102 LEDs), with a
   level shifter to convert from 3.3V logic (on pins P13 and P15) to 5V
   logic.
 
 * A [Qwiic][89] connector for attaching I2C peripherals.
+
+* A 3.5mm audio jack for headphones.  (Connected to pin P0).
 
 * A barrel connector for an external 5-12V power supply, which is
   mandatory for powering the NeoPixels, and can also optionally
@@ -80,7 +82,7 @@ Following the [NeoPixel best practices][25], the neo:bit includes a
 capacitor on the +5V power line.
 
 Once you have your NeoPixels hooked up, you should be able to access
-them by instantiating a NeoPixel strip on pin P0 in either
+them by instantiating a NeoPixel strip on pin P16 in either
 [MakeCode][27] or [Python][28].  The Alitove and Wesiri strings, as
 well as my NeoPixel butterflies, use RGB order instead of the default
 GRB order.
