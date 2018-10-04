@@ -27,7 +27,7 @@ neo:bit board.
 * [View schematic](doc/schematic.pdf)
 * [View PCB][30]
 
-![neo:bit board](doc/neobit-alitove.jpg)
+![neo:bit board](doc/neobit.jpg)
 
 ## Usage
 
@@ -144,6 +144,7 @@ Some symbols and footprints in this repo are under different licenses:
 * 74AHCT125 symbol is a substantially modified version of the symbol from [a library][6] by [propane-and-electrons][7].
 * Barrel_Jack_MountingPin symbol is from [the official KiCad 5 library][8], and R_POT_Mountingpin symbol is derived from a symbol in the official library ([CC-BY-SA 4.0 with exception][9]).
 
+![neo:bit with string of LEDs](doc/neobit-alitove.jpg)
 ![neo:bit with butterfly](doc/neobit-butterfly.jpg)
 
 [1]: https://github.com/anthonykirby/kicad_microbit_connector/blob/master/lib_microbit_connector/lib_microbit_connector.lib
@@ -168,7 +169,7 @@ Some symbols and footprints in this repo are under different licenses:
 [26]: https://coolcomponents.co.uk/products/edge-connector-for-bbc-micro-bit
 [27]: https://makecode.microbit.org/pkg/microsoft/pxt-neopixel
 [28]: https://microbit-micropython.readthedocs.io/en/latest/neopixel.html
-[29]: https://oshpark.com/shared_projects/wggp8Cjl
+[29]: https://oshpark.com/shared_projects/cOlGXHEk
 [30]: https://eyrie.io/board/9e1a5f1d622a41188564be353a699805
 [80]: https://www.adafruit.com/product/1663
 [81]: https://smile.amazon.com/gp/product/B075T84ZR3/
