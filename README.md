@@ -79,7 +79,7 @@ long as the micro:bit is powered by another source.
 
 Following the [NeoPixel best practices][25], the neo:bit includes a
 470 ohm resistor on the NeoPixel data line, and there is a 1000µF
-capacitor on the +5V power line.
+capacitor on the +V power line.
 
 Once you have your NeoPixels hooked up, you should be able to access
 them by instantiating a NeoPixel strip on pin P16 in either
