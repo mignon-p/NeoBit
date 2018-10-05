@@ -6,12 +6,13 @@ the [BBC micro:bit][16] and provides:
 * Two slide potentiometers, connected to micro:bit pins P1 and P2,
   which can be read as analog inputs.
 
-* A terminal block for connecting "NeoPixels" (WS-2812 LEDs), with a
-  level shifter to convert from 3.3V logic (on pin P16) to 5V logic.
-
-* A terminal block for connecting "DotStars" (APA-102 LEDs), with a
-  level shifter to convert from 3.3V logic (on pins P13 and P15) to 5V
+* A terminal block for connecting "[NeoPixels][92]" (WS-2812 LEDs),
+  with a level shifter to convert from 3.3V logic (on pin P16) to 5V
   logic.
+
+* A terminal block for connecting "[DotStars][93]" (APA-102 LEDs),
+  with a level shifter to convert from 3.3V logic (on pins P13 and
+  P15) to 5V logic.
 
 * A [Qwiic][89] connector for attaching I2C peripherals.
 
@@ -181,6 +182,8 @@ Some symbols and footprints in this repo are under different licenses:
 [89]: https://www.sparkfun.com/qwiic
 [90]: https://www.adafruit.com/product/3869
 [91]: https://www.adafruit.com/product/352
+[92]: https://www.adafruit.com/category/168
+[93]: https://www.adafruit.com/category/885
 
 [C1]: https://www.digikey.com/products/en?keywords=1189-1583-1-ND
 [C2]: https://www.digikey.com/products/en?keywords=BC2665CT-ND
