@@ -161,7 +161,7 @@ from the edge.  (These pins are slightly taller than the others.)  I
 usually solder just a few of the pins on the row closest to the edge,
 too, just for mechanical stability.
 
-![neo:bit edge connector](doc-neobit-edge-connector.jpg)
+![neo:bit edge connector](doc/neobit-edge-connector.jpg)
 
 ## License
 
