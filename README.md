@@ -135,6 +135,34 @@ The right-angle micro:bit edge connector (J5) is 4UCON 10156, which is
 available from [Adafruit][J5] in the US and from [Cool Components][26]
 in the UK.
 
+## Assembly
+
+Most of the assembly should be straightforward, but there are a few
+connectors worthy of more discussion.
+
+### Qwiic connector
+
+The four electrical pins are not enough to hold this connector in
+place.  There are two mounting pins which are also meant to be
+soldered, but I found hand-soldering them was nearly impossible.  So,
+I used a drop of epoxy to hold the Qwiic connector in place.
+
+### Terminal blocks
+
+I've found that wires don't stay in the terminal blocks very well, so
+you may wish to omit the terminal blocks and solder wires directly to
+the board.
+
+### micro:bit connector
+
+The micro:bit connector has 80 pins, but only 40 of them need to be
+soldered.  The pins that need to be soldered are the two rows farthest
+from the edge.  (These pins are slightly taller than the others.)  I
+usually solder just a few of the pins on the row closest to the edge,
+too, just for mechanical stability.
+
+![neo:bit edge connector](doc-neobit-edge-connector.jpg)
+
 ## License
 
 The files in this repo are licensed under [CC-BY-SA 4.0][10].
@@ -144,9 +172,10 @@ Some symbols and footprints in this repo are under different licenses:
 * [microbit_edge_connector][1] symbol by [anthonykirby][3] and [4UCON_10156_90deg][2] footprint (which I have substantially modified) by [SukkoPera][4] ([MIT License][5]).
 * 74AHCT125 symbol is a substantially modified version of the symbol from [a library][6] by [propane-and-electrons][7].
 * Barrel_Jack_MountingPin symbol is from [the official KiCad 5 library][8], and R_POT_Mountingpin symbol is derived from a symbol in the official library ([CC-BY-SA 4.0 with exception][9]).
+* The TerminalBlock_4Ucon_* footprints are also from the official KiCad 5 library.
 
 ![neo:bit with string of LEDs](doc/neobit-alitove.jpg)
-![neo:bit with butterfly](doc/neobit-butterfly.jpg)
+![neo:bit with Qwiic keypad and joystick](doc/neobit-qwiic.jpg)
 
 [1]: https://github.com/anthonykirby/kicad_microbit_connector/blob/master/lib_microbit_connector/lib_microbit_connector.lib
 [2]: https://github.com/SukkoPera/OpenAmiga600RamExpansion/blob/master/OpenAmiga600RamExpansion.pretty/4UCON_10156_90deg.kicad_mod
