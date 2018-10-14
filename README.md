@@ -90,6 +90,13 @@ GRB order.
 
 ![example MakeCode program](doc/neopixel-rainbow-pxt.png)
 
+### Qwiic
+
+I have [an example](https://makecode.microbit.org/_DCHeKoPCWEWu) for
+how to use the [Qwiic Keypad](https://www.sparkfun.com/products/14836),
+and [another example](https://makecode.microbit.org/_4x4iFTWd7JoU) for
+how to use the [Qwiic Joystick](https://www.sparkfun.com/products/14656).
+
 ## Ordering the Board
 
 You can order this board [directly from OSH Park][29] without needing
