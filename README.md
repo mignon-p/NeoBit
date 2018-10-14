@@ -149,9 +149,9 @@ I used a drop of epoxy to hold the Qwiic connector in place.
 
 ### Terminal blocks
 
-I've found that wires don't stay in the terminal blocks very well, so
-you may wish to omit the terminal blocks and solder wires directly to
-the board.
+I've found that stranded wires don't stay in the terminal blocks very
+well, so I recommend using solid wire.  Or, you may wish to omit the
+terminal blocks entirely and solder wires directly to the board.
 
 ### micro:bit connector
 
