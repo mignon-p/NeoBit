@@ -211,7 +211,7 @@ Some symbols and footprints in this repo are under different licenses:
 [80]: https://www.adafruit.com/product/1663
 [81]: https://smile.amazon.com/gp/product/B075T84ZR3/
 [82]: https://www.adafruit.com/product/1466
-[83]: http://kicad-pcb.org/
+[83]: http://kicad.org/
 [84]: https://en.wikipedia.org/wiki/Gerber_format
 [86]: https://www.elecrow.com/pcb-manufacturing.html
 [87]: https://jlcpcb.com/quote
